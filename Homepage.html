@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Registration form</title>
+</head>
+<style>
+          *{
+                    padding:0px;
+                    margin:0px;
+                    box-sizing: border-box;
+          }
+          body {
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                              'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                              sans-serif;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    ;
+          }
+          .window{
+                    width:100%;
+                    height: 100vh;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+          }
+          .window .logo{
+               width:200px;
+               height: 100px;
+               margin: 30px;
+          }
+          .form{
+                    width:50%;
+                    height:auto;
+                    display:flex;
+                    flex-direction: column;
+                    border-radius: 10px;
+                    background-color: white;
+                    box-shadow: rgba(8, 8, 8, 0.12) 0px 2px 4px 0px, rgba(8, 8, 8, 0.32) 0px 2px 16px 0px;
+                    padding:20px;
+                    font-weight: 100;
+
+          }
+          .form span{
+                    padding: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    color:rgb(59, 56, 56);
+                    font-style:initial;
+                    font-size: 20px;
+                    font-weight: 100;
+                    transition: 0.4s;
+                    
+
+
+          }
+          .form span span{
+                    width: 60%;
+                    display: flex;
+                    justify-content: center;
+          }
+          .form span span{
+                    padding: 0px;
+          }
+          .form span a{
+                    text-decoration: none;
+                    color:rgb(59, 56, 56);
+          }
+          .form span span input{
+                    width:100%;
+                    padding:10px;
+                    background-color: none;
+                    color:rgb(82, 80, 80);
+                    font-size: 15px;
+                    border: none;
+                    outline:none;
+                    border-bottom: 1px solid rgb(59, 56, 56);
+                    transition: 0.5s;
+
+
+          }
+          .form span.button{
+                    justify-content: center;
+          }
+          .form span.button button{
+                    border: 1px solid grey;
+                    color:grey;
+                    background: none;
+                    font-size: 15px;
+                    padding:10px;
+                    border-radius: 5px;
+                    transition: 1s;
+
+          }
+          .form span.button button:hover{
+                    background-color: rgb(17, 76, 87);
+                    color: white;
+
+          }
+          .form span:hover {
+                    color:rgb(45, 23, 124);
+
+          }
+          .form span:hover input{
+                    color:rgb(45, 23, 124);
+                    border-bottom: 1px solid rgb(45, 23, 124);
+                    
+
+
+
+          }
+          
+</style>
+<body>
+          <div class="window">
+                    
+                         <img class="logo" src="./logo jobfreak.png" alt="loading">
+                    
+                    <form action="" class="form">
+                              <span>
+                                        <label for="name">
+                                                  NAME
+
+                                        </label>
+
+                                        <span><input type="text" id="name" required></span>
+                                        
+
+                              </span>
+                              <span>
+                                        <label for="email">
+                                                  WORKING  E-MAIL
+  
+                                        </label>
+                                        <span><input type="text" id="email" required></span>
+
+
+                              </span>
+                              <span>
+                                        <label for="mobile">
+                                                  CONTACT  NUMBER
+
+                                        </label>
+                                        <span><input type="text" id="mobile" required></span>
+
+
+                              </span>
+                              <span>
+                                        <label for="password">
+                                                  PASSWORD
+
+                                        </label>
+                                        <span><input type="text" id="password" required></span>
+
+
+                              </span>
+                              <span>
+                                        <label for="confirmpassword">
+                                                  CONFIRM  PASSWORD
+
+                                        </label>
+                                        <span><input type="text" id="cofirmpassword" required></span>
+
+
+                              </span>
+                              <span class="button">
+                                        <button>Register</button>
+                              </span>
+                              <span class="log-span">
+                                        <p>Have an account?</p>
+                                        <a href="http://127.0.0.1:5500/studymonk/Login.html">Log in</a>
+                              </span>
+
+                    </form>
+          </div>
+          
+</body>
+</html>
